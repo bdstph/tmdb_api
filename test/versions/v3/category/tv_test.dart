@@ -128,6 +128,13 @@ void main() {
       });
     });
 
+    group('videos', () {
+      test('videos', () async {
+        final result = await tmdb.v3.tv.getVideos(103);
+        expect(result.containsKey('status_code'), false);
+      });
+    });
+
     group('Latest', () {
       test('with parameters', () async {
         final result = await tmdb.v3.tv.getLatest();

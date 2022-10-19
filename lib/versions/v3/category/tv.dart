@@ -318,8 +318,8 @@ class Tv extends Category<V3> {
   /// Map result = await tmdb.v3.tv.getVideos(103);
   /// ```
   ///
-  Future<Map> getVideos(String tvId) {
-    return _v._query('$_endPoint/$tvId');
+  Future<Map> getVideos(int tvId) {
+    return _v._query('$_endPoint/$tvId/videos');
   }
 
   /// Powered by our partnership with JustWatch, you can query

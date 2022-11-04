@@ -89,7 +89,7 @@ class TvEpisodes extends Category<V3> {
   ///```
   ///
   Future<Map> getCredits(int tvId, int seasonNumber, int episodeNumber) {
-    if (seasonNumber < 1 || tvId < 1 || episodeNumber < 1) {
+    if (seasonNumber < 0 || tvId < 1 || episodeNumber < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1||episodeNumber<1 is true');
     }
     return _v._query(
@@ -116,7 +116,7 @@ class TvEpisodes extends Category<V3> {
   ///```
   ///
   Future<Map> getExternalId(int tvId, int seasonNumber, int episodeNumber) {
-    if (seasonNumber < 1 || tvId < 1 || episodeNumber < 1) {
+    if (seasonNumber < 0 || tvId < 1 || episodeNumber < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1||episodeNumber<1 is true');
     }
     return _v._query(
@@ -139,7 +139,7 @@ class TvEpisodes extends Category<V3> {
   ///```
   ///
   Future<Map> getImages(int tvId, int seasonNumber, int episodeNumber) {
-    if (seasonNumber < 1 || tvId < 1 || episodeNumber < 1) {
+    if (seasonNumber < 0 || tvId < 1 || episodeNumber < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1||episodeNumber<1 is true');
     }
     return _v._query(
@@ -162,7 +162,7 @@ class TvEpisodes extends Category<V3> {
   ///```
   ///
   Future<Map> getVideos(int tvId, int seasonNumber, int episodeNumber) {
-    if (seasonNumber < 1 || tvId < 1 || episodeNumber < 1) {
+    if (seasonNumber < 0 || tvId < 1 || episodeNumber < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1||episodeNumber<1 is true');
     }
     return _v._query(
@@ -185,7 +185,7 @@ class TvEpisodes extends Category<V3> {
   ///```
   ///
   Future<Map> getTranslation(int tvId, int seasonNumber, int episodeNumber) {
-    if (seasonNumber < 1 || tvId < 1 || episodeNumber < 1) {
+    if (seasonNumber < 0 || tvId < 1 || episodeNumber < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1||episodeNumber<1 is true');
     }
     return _v._query(

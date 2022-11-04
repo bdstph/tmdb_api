@@ -114,7 +114,7 @@ class TvSeasons extends Category<V3> {
     int seasonNumber, {
     String? language,
   }) {
-    if (seasonNumber < 1 || tvId < 1) {
+    if (seasonNumber < 0 || tvId < 1) {
       throw ArgumentError('seasonNumber<1||tvId<1 is true');
     }
     return _v._query(
@@ -133,7 +133,7 @@ class TvSeasons extends Category<V3> {
     int seasonNumber, {
     String? language,
   }) {
-    if (tvId < 1 || seasonNumber < 1) {
+    if (tvId < 1 || seasonNumber < 0) {
       throw ArgumentError('tvId<1||seasonNumber<1 is true');
     }
 
@@ -149,7 +149,7 @@ class TvSeasons extends Category<V3> {
     int seasonNumber, {
     String? language,
   }) {
-    if (tvId < 1 || seasonNumber < 1) {
+    if (tvId < 1 || seasonNumber < 0) {
       throw ArgumentError('tvId<1||seasonNumber<1 is true');
     }
 
@@ -165,7 +165,7 @@ class TvSeasons extends Category<V3> {
     int seasonNumber, {
     String? language,
   }) {
-    if (tvId < 1 || seasonNumber < 1) {
+    if (tvId < 1 || seasonNumber < 0) {
       throw ArgumentError('tvId<1||seasonNumber<1 is true');
     }
 
